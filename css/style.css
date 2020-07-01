@@ -317,6 +317,9 @@ img{
 	background-size: cover;
 	color: #fff;
 }
+#library h3.title{
+	margin-top: 0;
+}
 @media(min-width: 768px){
 	#library .images{
 		padding: 0;
