@@ -15,14 +15,15 @@
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" href="css/style.css">
-	
+	<link href="css/simple-lightbox.min.css" rel="stylesheet" />
+
 </head>
 <body>
 	<header id="header">
 		<div class="header-top">
 			<nav class="navbar" role="navigation">
 				<div class="container">
-					<a class="navbar-brand" href="#"><img src="images/logo-white.png" alt=""></a>
+					<a class="logo-top" href="#"><img src="images/logo-white.png" alt=""></a>
 					<div class="navbar-right">
 						<div class="text-center">
 							<h4>TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP HÀ NỘI</h4>
@@ -43,6 +44,7 @@
 							<span class="icon-bar" style="background-color: #0f74bc"></span>
 							<span class="icon-bar" style="background-color: #0f74bc"></span>
 						</button>
+						<a href="#" class="navbar-brand" style="margin-top: -10px;"><img src="images/logo.png" alt=""></a>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,9 +52,35 @@
 						<ul class="nav navbar-nav navbar-left">
 							<li><a href="#" style="margin-top: -10px;"><i class="fas fa-2x fa-home"></i></a></li>
 							<li><a href="#">Giới thiệu</a></li>
-							<li><a href="#">Cung ứng nhân lực</a></li>
-							<li><a href="#">Du học</a></li>
-							<li><a href="#">Thư viện Media</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cung ứng nhân lực <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nhật Bản</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hàn Quốc</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Đài Loan</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ả rập</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">UAE</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">UAE</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Quatar</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Du học <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Du học Nhật Bản</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Du học Hàn Quốc</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Du học Đài Loan</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Du học Trung Quốc</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Thư viện Media <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Về Letco</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Về HaUI</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hoạt động 5s</a></li>
+								</ul>
+							</li>
 							<li><a href="#">Tin tức</a></li>
 							<li><a href="#">Liên hệ</a></li>
 							<li><a href="#">Blog</a></li>
@@ -64,7 +92,7 @@
 						</ul>
 						<form class="navbar-form navbar-right" role="search">
 							<div class="form-group">
-								<i class="fas fa-2x fa-search icon-search"></i>
+								<img src="images/icon_search.png" class="icon-search" alt="">
 								<input type="text" class="form-control" placeholder="Tìm kiếm">
 							</div>
 						</form>
@@ -117,16 +145,16 @@
 		<section id="company">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-7 col-xs-12">
+					<div class="col-md-6 col-left col-xs-12">
 						<div class="box"></div>
 						<img src="images/company_img.jpg" alt="">
 					</div>
-					<div class="col-md-5 col-xs-12">
-						<h5 class="text-left">Giới thiệu về chúng tôi</h5>
-						<h3 class="title text-left">Công ty TNHH Một thành viên
-						Đào tạo và Cung ứng Nhân lực – HaUI</h3>
-						<p>Công ty TNHH Một thành viên Đào tạo và Cung ứng nhân lực – HaUI (LETCO) được thành lập ngày 29/11/2000, là doanh nghiệp Nhà nước thuộc trường Đại học Công nghiệp Hà Nội được chuyển đổi hoạt động theo mô hình công ty TNHH một thành viên 100% vốn nhà nước theo Quyết định số 3466/QĐ-BCT ngày 29/06/2010 của Bộ trưởng Bộ Công Thương.</p>
-						<p>Quá trình hoạt động và phát triển, Công ty LETCO đã khẳng định được thương hiệu, vị thế trên thị trường, đặc biệt là lĩnh vực đưa người lao động đi làm việc và học tập ở nước ngoài</p>
+					<div class="col-md-6 col-right col-xs-12">
+						<h4 class="text-left">Giới thiệu về chúng tôi</h4>
+						<h2 class="title text-left">Công ty TNHH Một thành viên
+						Đào tạo và Cung ứng Nhân lực – HaUI</h2>
+						<p>Công ty TNHH Một thành viên Đào tạo và Cung ứng nhân lực - HaUI (LETCO) được thành lập ngày 29/11/2000, là doanh nghiệp Nhà nước thuộc trường Đại học Công nghiệp Hà Nội được chuyển đổi hoạt động theo mô hình công ty TNHH một thành viên 100% vốn nhà nước theo Quyết định số 3466/QĐ-BCT ngày 29/06/2010 của Bộ trưởng Bộ Công Thương.</p>
+						<p>Quá trình hoạt động và phát triển, Công ty LETCO đã khẳng định được thương hiệu, vị thế trên thị trường, đặc biệt là lĩnh vực đưa người lao động đi làm việc và học tập ở nước ngoài.</p>
 						<button class="btn btn-more">Xem thêm</button>
 					</div>		
 				</div>
@@ -134,7 +162,7 @@
 		</section>
 		<section id="services">
 			<div class="container">
-				<h3 class="text-center title">DỊCH VỤ CỦA <span style="color: #0f74bc">CHÚNG TÔI</span></h3>
+				<h2 class="text-center title">DỊCH VỤ CỦA <span style="color: #0f74bc">CHÚNG TÔI</span></h2>
 				<p class="text-center">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velitNeque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
 				<ul class="nav nav-pills btn-group">
 					<li class="active"> <a data-toggle="pill" href="#du_hoc" class="btn btn-lg">DU HỌC</a></li>
@@ -172,8 +200,8 @@
 			<div class="container">
 				<div class="content-library">
 					<div class="row">
-						<div class="col-md-3 col-xs-12"><h3 class="title">THƯ VIỆN HÌNH ẢNH</h3></div>
-						<div class="col-md-9 col-xs-12">
+						<div class="col-md-4 col-xs-12"><h2 class="title">THƯ VIỆN HÌNH ẢNH</h2></div>
+						<div class="col-md-8 col-xs-12">
 							<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velitNeque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
 						</div>
 					</div>
@@ -181,28 +209,39 @@
 
 				<div class="images-library">
 					<div class="row">
-						<div class="col-md-4 video">
-							<iframe width="100%" height="315" src="https://www.youtube.com/embed/NcLyQcvyv7w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding: 3px;background-color: #fff;"></iframe>
+						<div class="col-md-5 video">
+							<div class="video-play">
+								<img src="images/video.jpg" alt="">
+								<a href="#"><i class="far fa-3x fa-play-circle"></i></a>
+							</div>
 							<h4>TIÊU ĐỀ VIDEO 01</h4>
-							<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velitNeque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+							<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velitNeq</p>
 							<a href="https://www.youtube.com/channel/UCsqRgfUzf8BTplwuNVNgkKg/videos" class="pull-right">Xem tất cả video</a>
 						</div>
-						<div class="col-md-8 gallery">
+						<div class="col-md-7 gallery">
 							<div class="row">
-								<img src="images/library_01.jpg" onclick="openModal();currentSlide(1)" class="col-md-6 col-xs-12" alt="">
-								<img src="images/library_02.jpg" onclick="openModal();currentSlide(1)" class="col-md-6 col-xs-12" alt="">
-							</div>
-							<div class="row">
-								<img src="images/library_03.jpg" onclick="openModal();currentSlide(1)" class="col-md-4 col-xs-12" alt="">
-								<img src="images/library_04.jpg" onclick="openModal();currentSlide(1)" class="col-md-4 col-xs-12" alt="">
-								<img src="images/library_05.jpg" onclick="openModal();currentSlide(1)" class="col-md-4 col-xs-12" alt="">
-								<a href="#" class="pull-right">Xem toàn bộ album ảnh</a>
-							</div>
+							<a href="images/library_01.jpg"  class="col-md-6 col-xs-6">
+								<img src="images/library_01.jpg" onclick="openModal();currentSlide(1)" alt="">
+							</a>
+							<a href="images/library_02.jpg"  class="col-md-6 col-xs-6">
+								<img src="images/library_02.jpg" onclick="openModal();currentSlide(1)" alt="">
+							</a>
+							<a href="images/library_03.jpg" class="col-md-4 col-xs-4">
+								<img src="images/library_03.jpg" onclick="openModal();currentSlide(1)" alt="">
+							</a>
+							<a href="images/library_04.jpg" class="col-md-4 col-xs-4">
+								<img src="images/library_04.jpg" onclick="openModal();currentSlide(1)" alt="">
+							</a>
+							<a href="images/library_05.jpg" class="col-md-4 col-xs-4">
+								<img src="images/library_05.jpg" onclick="openModal();currentSlide(1)" alt="">
+							</a>
+							<a href="#" class="pull-right">Xem toàn bộ album ảnh</a>
+						</div>
 						</div>
 					</div>
 				</div>
 				<!-- Modal image gallery -->
-				<div id="myModal" class="modal">
+				<!-- <div id="myModal" class="modal">
 					<span class="close cursor" onclick="closeModal()">&times;</span>
 					<div class="modal-content">
 
@@ -242,14 +281,14 @@
 							<img class="demo cursor" src="images/library_04.jpg" style="width:100%" onclick="currentSlide(4)" alt="library_04">
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
 		</div>
 	</section>
 	<section id="news">
 		<div class="container">
-			<h3 class="title">TIN TỨC <span style="color: #0f74bc">MỚI NHẤT</span></h3>
+			<h2 class="title">TIN TỨC <span style="color: #0f74bc">MỚI NHẤT</span></h2>
 			<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
 			<div class="row">
 				<!-- news -->
@@ -259,7 +298,7 @@
 						<h4>Leverage agile frame works to provide a synopsis for</h4>
 						<hr>
 						<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit consectetur, adipisci velit...</p>
-						<p class="text-right"><i class="far fa-clock"></i> 25/05/2020  | <a href="#">Xem chi tiết</a></p>
+						<p class="text-right"><i class="far fa-clock"></i> 25/05/2020   <a href="#">Xem chi tiết</a></p>
 					</div>
 				</div>
 				<!-- news -->
@@ -269,7 +308,7 @@
 						<h4>Leverage agile frame works to provide a synopsis for</h4>
 						<hr>
 						<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit consectetur, adipisci velit...</p>
-						<p class="text-right"><i class="far fa-clock"></i> 25/05/2020  | <a href="#">Xem chi tiết</a></p>
+						<p class="text-right"><i class="far fa-clock"></i> 25/05/2020   <a href="#">Xem chi tiết</a></p>
 					</div>
 				</div>
 				<!-- news -->
@@ -279,7 +318,7 @@
 						<h4>Leverage agile frame works to provide a synopsis for</h4>
 						<hr>
 						<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit consectetur, adipisci velit...</p>
-						<p class="text-right"><i class="far fa-clock"></i> 25/05/2020  | <a href="#">Xem chi tiết</a></p>
+						<p class="text-right"><i class="far fa-clock"></i> 25/05/2020   <a href="#">Xem chi tiết</a></p>
 					</div>
 				</div>
 				<!-- end -->
@@ -288,7 +327,7 @@
 	</section>
 	<section id="customer">
 		<div class="container">
-			<h1 class="text-center title">KHÁCH HÀNG <span style="color: #0f74bc">NÓI VỀ CHÚNG TÔI</span></h1>
+			<h2 class="text-center title">KHÁCH HÀNG <span style="color: #0f74bc">NÓI VỀ CHÚNG TÔI</span></h2>
 			<p class="text-center">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velitNeque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
 		</div>
 		<!-- comment from customer -->
@@ -482,7 +521,7 @@
 </section>
 <section id="partner">
 	<div class="container">
-		<h1 class="title">ĐỐI TÁC <span style="color: #0f74bc">CỦA CHÚNG TÔI</span></h1>
+		<h2 class="title">ĐỐI TÁC <span style="color: #0f74bc">CỦA CHÚNG TÔI</span></h2>
 		<div class="owl-carousel owl-theme">
 			<div class="item">
 				<img src="images/partner_01.jpg" alt="">
@@ -548,7 +587,6 @@
 							<a href=""><i class="fab fa-instagram"></i></a>
 							<a href=""><i class="fab fa-facebook-f"></i></a>
 							<a href=""><i class="fab fa-twitter"></i></a>
-							<a href=""><i class="fab fa-glide-g"></i></a>
 							<a href=""><i class="fab fa-whatsapp"></i></a>
 						</li>
 					</ul>
@@ -558,15 +596,12 @@
 	</section>
 	<div id="footer-bottom">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-9 col-xs-12">
-					<h5 class="title text-center">Copyright © 2015 CÔNG TY TNHH MTV ĐÀO TẠO VÀ CUNG ỨNG NHÂN LỰC - HaUI</h5>
-					<p class="text-center">Địa chỉ: Nhà A5 - Trường ĐH Công nghiệp Hà Nội - Phường Minh Khai - Quận Bắc Từ Liêm - Hà Nội</p>
-					<p class="text-center">Điện thoại: (84.24)3765.0049, Fax: (84.24)3765.6081, Email: haui@letco.vn</p>
-				</div>
-				<div class="col-md-3 col-xs-12">
-					<img src="images/logo_footer.png" alt="">
-				</div>
+			<div class="text-center">
+				<h4 class="title text-center">Copyright © 2015 CÔNG TY TNHH MTV ĐÀO TẠO VÀ CUNG ỨNG NHÂN LỰC - HaUI</h4>
+				<p class="text-center">Địa chỉ: Nhà A5 - Trường ĐH Công nghiệp Hà Nội - Phường Minh Khai - Quận Bắc Từ Liêm - Hà Nội</p>
+				<p class="text-center">Điện thoại: (84.24)3765.0049, Fax: (84.24)3765.6081, Email: haui@letco.vn</p>
+
+				<img src="images/logo_footer.png" alt="">
 			</div>
 		</div>
 	</div>
@@ -576,6 +611,9 @@
 <!-- Slick js -->
 <script type="text/javascript" src="js/slick.js"></script>
 <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<!-- simple-lightbox JavaScript Plugin -->
+<script src="js/simple-lightbox.min.js"></script>
+<script src="js/simple-lightbox.jquery.min.js"></script>
 <!-- boostrap -->
 <script src="js/bootstrap.min.js"></script>
 <!-- owl carousel js -->
@@ -584,6 +622,13 @@
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <!-- js config -->
 <script type="text/javascript">
+	// event hover dropdown/
+	$('ul.nav li.dropdown').hover(function() {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+	}, function() {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+	});
+	// end
 	$(document).on('ready', function() {
 		$(".center").slick({
 			dots: false,
@@ -631,7 +676,7 @@
 		navText: ["<i class='fas fa-angle-double-left'></i>", "<i class='fas fa-angle-double-right'></i>"],
 		responsive:{
 			0:{
-				items:1
+				items:2
 			},
 			600:{
 				items:2
@@ -641,44 +686,53 @@
 			}
 		}
 	});
-	// scrpit modal image
-	function openModal() {
-		document.getElementById("myModal").style.display = "block";
-	}
+		// plugin light box config 
+		var gallery = $('.gallery a').simpleLightbox({
+			// default source attribute
+        sourceAttr: 'href',
+        
+        // shows fullscreen overlay
+        overlay: true,
+        
+        // shows loading spinner
+        spinner: true,
+        
+        // shows navigation arrows
+        nav: true,
+        // shows close button
+        close: true,
+        
+        // text for close button
+        closeText: 'X',
+        
+        // swipe up or down to close gallery
+        swipeClose: true,
+        
+        // show counter
+        showCounter: true,
+        
+        // file extensions
+        fileExt: 'png|jpg|jpeg|gif',
+        
+        // weather to slide in new photos or not, disable to fade
+        animationSlide: true,
+        
+        // animation speed in ms
+        animationSpeed: 250,
+        
+        // image preloading
+        preloading: true,
+        
+        // keyboard navigation
+        enableKeyboard: true,
+        // show an alert if image was not found
+        alertError:  false,
+        // endless looping
+        loop:  true
+        
 
-	function closeModal() {
-		document.getElementById("myModal").style.display = "none";
-	}
+		});
 
-	var slideIndex = 1;
-	showSlides(slideIndex);
-
-	function plusSlides(n) {
-		showSlides(slideIndex += n);
-	}
-
-	function currentSlide(n) {
-		showSlides(slideIndex = n);
-	}
-
-	function showSlides(n) {
-		var i;
-		var slides = document.getElementsByClassName("mySlides");
-		var dots = document.getElementsByClassName("demo");
-		var captionText = document.getElementById("caption");
-		if (n > slides.length) {slideIndex = 1}
-			if (n < 1) {slideIndex = slides.length}
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
-				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
-				}
-				slides[slideIndex-1].style.display = "block";
-				dots[slideIndex-1].className += " active";
-				captionText.innerHTML = dots[slideIndex-1].alt;
-			}
-
-		</script>
-	</body>
-	</html>
+	</script>
+</body>
+</html>
